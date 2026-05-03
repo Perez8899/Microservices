@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
-@FeignClient(name = "msvc-student", url = "localhost:8090")
+@FeignClient(name = "msvc-student", url = "localhost:8080") // 8090 anithing gateway
 public interface StudentClient {  //HTTP configuration to consume the student service
 
     @GetMapping("/api/student/search-by-course/{courseId}")
